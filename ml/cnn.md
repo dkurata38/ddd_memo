@@ -33,7 +33,8 @@ https://deepage.net/deep_learning/2016/11/07/convolutional_neural_network.html#c
 + Averageプーリング フィルタ内の平均値を抽出する.
 
 ### 全結合層
-
+#### パラメータの初期化
++ 重み 入力サイズ * 出力サイズ
 
 ### 出力層
 出力チャンネル数はクラス数と一致する.
