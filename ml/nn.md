@@ -25,6 +25,25 @@ class ReLu:
     return dx[self.x <= 0] = 0
 ```
 
+##### ReLu関数の派生
++ Leaky ReLU ReLU関数の傾きに0.01を乗算している.
+```
+x < 0 => 0
+x >= 0 => 0.01 * x
+```
+
++ Parametric ReLU(PReLU) 名前の通り, ReLU関数の傾きにがパラメータ化されている.
+```
+x < 0 => 0
+x >= 0 => a * x
+```
+
++ Exponential Linear Units 
+```
+x < 0 => 0
+x >= 0 => e ** x - 1
+```
+
 #### ソフトマックス関数
 
 ## マルチタスク学習
